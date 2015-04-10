@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30814A311AD529E50000EBA5 /* SyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30814A301AD529E50000EBA5 /* SyncOperation.m */; };
+		30DB2CE71AD6116A0033CD3F /* AsynOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB2CE61AD6116A0033CD3F /* AsynOperation.m */; };
+		30DB2CED1AD670600033CD3F /* RunLoopObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB2CEC1AD670600033CD3F /* RunLoopObj.m */; };
 		3AA1E4BA1AD40C2C004342E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1E4B91AD40C2C004342E6 /* main.m */; };
 		3AA1E4BD1AD40C2C004342E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1E4BC1AD40C2C004342E6 /* AppDelegate.m */; };
 		3AA1E4C01AD40C2C004342E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1E4BF1AD40C2C004342E6 /* ViewController.m */; };
@@ -27,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30814A2F1AD529E50000EBA5 /* SyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncOperation.h; sourceTree = "<group>"; };
+		30814A301AD529E50000EBA5 /* SyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncOperation.m; sourceTree = "<group>"; };
+		30DB2CE51AD6116A0033CD3F /* AsynOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynOperation.h; sourceTree = "<group>"; };
+		30DB2CE61AD6116A0033CD3F /* AsynOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynOperation.m; sourceTree = "<group>"; };
+		30DB2CEB1AD670600033CD3F /* RunLoopObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopObj.h; sourceTree = "<group>"; };
+		30DB2CEC1AD670600033CD3F /* RunLoopObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopObj.m; sourceTree = "<group>"; };
 		3AA1E4B41AD40C2C004342E6 /* LearnGCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnGCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA1E4B81AD40C2C004342E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA1E4B91AD40C2C004342E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30814A2E1AD529980000EBA5 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				30814A2F1AD529E50000EBA5 /* SyncOperation.h */,
+				30814A301AD529E50000EBA5 /* SyncOperation.m */,
+				30DB2CE51AD6116A0033CD3F /* AsynOperation.h */,
+				30DB2CE61AD6116A0033CD3F /* AsynOperation.m */,
+				30DB2CEB1AD670600033CD3F /* RunLoopObj.h */,
+				30DB2CEC1AD670600033CD3F /* RunLoopObj.m */,
+			);
+			name = Operation;
+			sourceTree = "<group>";
+		};
 		3AA1E4AB1AD40C2C004342E6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,7 @@
 				3AA1E4BC1AD40C2C004342E6 /* AppDelegate.m */,
 				3AA1E4BE1AD40C2C004342E6 /* ViewController.h */,
 				3AA1E4BF1AD40C2C004342E6 /* ViewController.m */,
+				30814A2E1AD529980000EBA5 /* Operation */,
 				3AA1E4C11AD40C2C004342E6 /* Main.storyboard */,
 				3AA1E4C41AD40C2C004342E6 /* Images.xcassets */,
 				3AA1E4C61AD40C2C004342E6 /* LaunchScreen.xib */,
@@ -219,7 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DB2CE71AD6116A0033CD3F /* AsynOperation.m in Sources */,
+				30814A311AD529E50000EBA5 /* SyncOperation.m in Sources */,
 				3AA1E4C01AD40C2C004342E6 /* ViewController.m in Sources */,
+				30DB2CED1AD670600033CD3F /* RunLoopObj.m in Sources */,
 				3AA1E4BD1AD40C2C004342E6 /* AppDelegate.m in Sources */,
 				3AA1E4BA1AD40C2C004342E6 /* main.m in Sources */,
 			);
@@ -344,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LearnGCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LearnGCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +440,7 @@
 				3AA1E4D91AD40C2C004342E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AA1E4DA1AD40C2C004342E6 /* Build configuration list for PBXNativeTarget "LearnGCDTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				3AA1E4DC1AD40C2C004342E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
